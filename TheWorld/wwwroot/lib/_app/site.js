@@ -1,0 +1,1 @@
+!function(){var a=document.getElementById("username");a.innerHTML="Fabio Duque Com Javascript";var e=$("#sidebar,#wrapper"),s=$("#sidebartoggle i.fa");$("#sidebartoggle").on("click",function(){e.toggleClass("hide-sidebar"),e.hasClass("hide-sidebar")?(s.removeClass("fa-angle-left"),s.addClass("fa-angle-right")):(s.addClass("fa-angle-left"),s.removeClass("fa-angle-right"))})}();

@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations - Cópia\**" />
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="NovaPasta1\**" />
+    <Compile Remove="NovaPasta\**" />
+    <Content Remove="Migrations - Cópia\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="NovaPasta1\**" />
+    <Content Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="Migrations - Cópia\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="NovaPasta1\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="Migrations - Cópia\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="NovaPasta1\**" />
+    <None Remove="NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20170507024309_InitialDatabase.cs" />
+    <Compile Include="Migrations\20170507024309_InitialDatabase.Designer.cs" />
+    <Compile Include="Migrations\20170515214847_AddIdentity.cs" />
+    <Compile Include="Migrations\20170515214847_AddIdentity.Designer.cs" />
+    <Compile Include="Migrations\20170515215104_IdentityClasses.cs" />
+    <Compile Include="Migrations\20170515215104_IdentityClasses.Designer.cs" />
+    <Compile Include="Migrations\WorldContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\htmlpage.html" />
+    <Content Include="wwwroot\img\airbus-a319-100-360-front-980x654.jpg" />
+    <Content Include="wwwroot\js\simpleControls.js" />
+    <Content Include="wwwroot\js\app-trips.js" />
+    <Content Include="wwwroot\js\tripsController.js" />
+    <Content Include="wwwroot\js\tripsEditorController.js" />
+    <Content Include="wwwroot\simpleindex.html" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\simpleindex.min.html" />
+    <Content Include="wwwroot\site.css" />
+    <Content Include="wwwroot\tripsEditorView.html" />
+    <Content Include="wwwroot\tripsView.html" />
+    <Content Include="wwwroot\waitCursor.html" />
+    <Content Include="wwwroot\waitCursor.jtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.0-preview1-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="1.1.0-preview1-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlserver.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
